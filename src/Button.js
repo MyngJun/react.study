@@ -1,19 +1,15 @@
 import PropTypes from "prop-types";
-//terminal에서 npm i prop-types입력으로 설치 후 prop-types를 import함
+import styles from "./Button.module.css"
+/* Button.module.css에서 만들어준 스타일을 App.js가 아닌 Button.js에 연결해줌*/
 
 function Button({text}){
-    return (
-    <Button style={{
-        backgroundColor: "tomato",
-        color: "white",
-    }}> //버튼에 style을 직접 넣어줌
+return <Button className={styles.btn}> 
         {text}
-        </Button>
-    );
-}
+        </Button>;
+}/*function button을 Button.module.css 파일의 class 이름 btn과 연결하여 함수속 버튼에 스타일을 넣어줌*/ 
 
 Button.propTypes = {
     text: PropTypes.string.isRequired,
-}; //Button의 text에 proptypes를 넣어줌
+}; 
 
-export default Button;//App.js에서 Button을 가져올 수 있도록 해줌
+export default Button;
