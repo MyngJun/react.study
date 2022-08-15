@@ -1,0 +1,8 @@
+/* 
+button {
+    color:white;
+    background-color: tomato;
+}
+css를 통해 js의 button의 색을 바꿔줄 수 있으나 이는 한 js파일 내의 
+모든 button의 색을 바꾸므로 쉬우나 비효율적임
+*/
